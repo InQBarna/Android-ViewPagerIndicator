@@ -12,7 +12,7 @@
     <groupId>com.viewpagerindicator</groupId>
     <artifactId>parent</artifactId>
     <packaging>pom</packaging>
-    <version>2.4.1</version>
+    <version>2.4.2-SNAPSHOT</version>
 
     <name>Android-ViewPagerIndicator (Parent)</name>
     <description>Android library for.</description>
@@ -66,9 +66,9 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
         <java.version>1.6</java.version>
-        <android.version>4.1.1.4</android.version>
-        <android.platform>16</android.platform>
-        <android.support.version>r7</android.support.version>
+        <android.version>17</android.version>
+        <android.platform>17</android.platform>
+        <android.support.version>v4</android.support.version>
 
         <android-maven.version>3.3.0</android-maven.version>
     </properties>
@@ -76,14 +76,14 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.google.android</groupId>
+                <groupId>com.inqbarna.android</groupId>
                 <artifactId>android</artifactId>
                 <version>${android.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.google.android</groupId>
-                <artifactId>support-v4</artifactId>
+                <groupId>com.inqbarna.android</groupId>
+                <artifactId>support</artifactId>
                 <version>${android.support.version}</version>
             </dependency>
         </dependencies>
