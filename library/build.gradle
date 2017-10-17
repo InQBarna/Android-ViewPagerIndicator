@@ -35,5 +35,5 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:support-v4:${rootProject.ext.supportLibsVersion}"
+    implementation "com.android.support:support-v4:${supportLibsVersion}"
 }

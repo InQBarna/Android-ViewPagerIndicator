@@ -751,6 +751,11 @@ public class TitlePageIndicator extends View implements PageIndicator {
     }
 
     @Override
+    public int getCurrentItem() {
+        return mCurrentPage;
+    }
+
+    @Override
     public void onPageScrollStateChanged(int state) {
         mScrollState = state;
 

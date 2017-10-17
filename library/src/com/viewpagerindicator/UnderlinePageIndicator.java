@@ -302,6 +302,11 @@ public class UnderlinePageIndicator extends View implements PageIndicator {
     }
 
     @Override
+    public int getCurrentItem() {
+        return mCurrentPage;
+    }
+
+    @Override
     public void notifyDataSetChanged() {
         invalidate();
     }

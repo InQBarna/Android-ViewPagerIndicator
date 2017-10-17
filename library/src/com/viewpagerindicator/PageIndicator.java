@@ -50,6 +50,13 @@ public interface PageIndicator extends ViewPager.OnPageChangeListener {
     void setCurrentItem(int item);
 
     /**
+     * Get currently selected page
+     *
+     * @return the current active position
+     */
+    int getCurrentItem();
+
+    /**
      * Set a page change listener which will receive forwarded events.
      *
      * @param listener

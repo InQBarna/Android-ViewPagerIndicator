@@ -165,6 +165,11 @@ public class IconPageIndicator extends HorizontalScrollView implements PageIndic
     }
 
     @Override
+    public int getCurrentItem() {
+        return mSelectedIndex;
+    }
+
+    @Override
     public void setOnPageChangeListener(OnPageChangeListener listener) {
         mListener = listener;
     }

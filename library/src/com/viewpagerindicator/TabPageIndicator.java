@@ -254,6 +254,11 @@ public class TabPageIndicator extends HorizontalScrollView implements PageIndica
     }
 
     @Override
+    public int getCurrentItem() {
+        return mSelectedTabIndex;
+    }
+
+    @Override
     public void setOnPageChangeListener(OnPageChangeListener listener) {
         mListener = listener;
     }
