@@ -1,24 +1,24 @@
-#Android generated
-bin
-gen
+# Gradle files
+.gradle/
+build/
 
-#Eclipse
-.project
-.classpath
-.settings
-
-#IntelliJ IDEA
-.idea
-*.iml
-classes
-
-#Maven
-target
-release.properties
-pom.xml.*
-
-#Command line
+# Local configuration file (sdk path, etc)
 local.properties
-build.xml
-proguard-project.txt
-/library/build
+
+# Android Studio generated folders
+.navigation/
+captures/
+.externalNativeBuild
+
+# IntelliJ project files
+*.iml
+.idea/
+
+# Misc
+.DS_Store
+
+# Keystore files
+*.jks
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json

@@ -23,9 +23,10 @@ import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.v4.view.MotionEventCompat;
-import android.support.v4.view.ViewConfigurationCompat;
-import android.support.v4.view.ViewPager;
+import androidx.core.view.MotionEventCompat;
+import androidx.core.view.ViewConfigurationCompat;
+import androidx.viewpager.widget.ViewPager;
+
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -38,14 +39,14 @@ import android.view.ViewConfiguration;
 public class LinePageIndicator extends View implements PageIndicator {
     private static final int INVALID_POINTER = -1;
 
-    private final Paint mPaintUnselected = new Paint(Paint.ANTI_ALIAS_FLAG);
-    private final Paint mPaintSelected = new Paint(Paint.ANTI_ALIAS_FLAG);
-    private ViewPager mViewPager;
-    private ViewPager.OnPageChangeListener mListener;
-    private int mCurrentPage;
-    private boolean mCentered;
-    private float mLineWidth;
-    private float mGapWidth;
+    private final Paint                          mPaintUnselected = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private final Paint                          mPaintSelected = new Paint(Paint.ANTI_ALIAS_FLAG);
+    private       ViewPager                      mViewPager;
+    private       ViewPager.OnPageChangeListener mListener;
+    private       int                            mCurrentPage;
+    private       boolean                        mCentered;
+    private       float                          mLineWidth;
+    private       float                          mGapWidth;
 
     private int mTouchSlop;
     private float mLastMotionX = -1;
