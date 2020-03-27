@@ -34,5 +34,5 @@ android {
 }
 
 dependencies {
-    implementation "com.android.support:support-v4:${supportLibsVersion}"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
 }
